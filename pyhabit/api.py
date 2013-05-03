@@ -1,5 +1,7 @@
-import requests
 import json
+
+import requests
+
 
 class HabitAPI(object):
     DIRECTION_UP = "up"
@@ -10,7 +12,7 @@ class HabitAPI(object):
     TYPE_TODO = "todo"
     TYPE_REWARD = "reward"
 
-    def __init__(self, user_id, api_key, base_url = "https://habitrpg.com/"):
+    def __init__(self, user_id, api_key, base_url="https://habitrpg.com/"):
         self.user_id = user_id
         self.api_key = api_key
         self.base_url = base_url
@@ -38,7 +40,7 @@ class HabitAPI(object):
     def task(self, task_id):
         return self.request("get", "user/task/%s" % task_id).json()
 
-    def create_task(self, task_type, text, completed = False, value = 0, note = ""):
+    def create_task(self, task_type, text, completed=False, value=0, note=""):
         data = {
             'type': task_type,
             'text': text,
@@ -47,7 +49,7 @@ class HabitAPI(object):
             'note': note
         }
 
-        return self.request("post", "user/task/%s" % task_id, data=data).json()
+        return self.request("post", "user/task/", data=data).json()
 
     def update_task(self, task_id, text):
         return self.request("put", "user/task/%s" % task_id, data=text).json()
@@ -55,6 +57,6 @@ class HabitAPI(object):
     def perform_task(self, task_id, direction):
         url = "/v1/users/%s/tasks/%s/%s" % (self.user_id, task_id, direction)
         data = json.dumps({'apiToken': self.api_key})
-        headers={'Content-Type': 'application/json'}
+        headers = {'Content-Type': 'application/json'}
 
         return self.request("post", url, data=data, headers=headers).json()
