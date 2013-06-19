@@ -40,13 +40,13 @@ class HabitAPI(object):
     def task(self, task_id):
         return self.request("get", "user/task/%s" % task_id).json()
 
-    def create_task(self, task_type, text, completed=False, value=0, note=""):
+    def create_task(self, task_type, text, completed=False, value=0, notes=""):
         data = {
             'type': task_type,
             'text': text,
             'completed': completed,
             'value': value,
-            'note': note
+            'notes': notes
         }
 
         return self.request("post", "user/task/", data=data).json()
