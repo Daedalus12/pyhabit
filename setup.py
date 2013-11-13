@@ -9,9 +9,9 @@ setup(
         'requests'
     ],
     packages = find_packages(),
-    author = "Xeross",
-    author_email = "contact@xeross.me",
+    author = "3onyc",
+    author_email = "3onyc@x3tech.com",
     license = "MIT",
-    url = "http://github.com/xeross/pyhabit",
-    download_url = "https://github.com/xeross/pyhabit/tarball/master"
+    url = "http://github.com/3onyc/pyhabit",
+    download_url = "https://github.com/3onyc/pyhabit/tarball/master"
 )
