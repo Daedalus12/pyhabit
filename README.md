@@ -1,22 +1,18 @@
-pyhabit
-===============
+# pyhabit
 
 HabitRPG python library (WIP)
 
-Installation
-------------
+## Installation
 
 Install using pip
 
     pip install git+git://github.com/3onyc/pyhabit
 
-Requires
---------
+## Requires
 
 * requests
 
-Usage
------
+## Usage
 
     from habitrpg import HabitAPI
 
@@ -24,8 +20,13 @@ Usage
     api.user()
     ... # etc.
 
-Todo
-----
+## Todo
 
 * Unit tests
 * Streamlining code where possible
+
+## Contributors
+
+* Akshay Bist - Original pyhabit module and continued development
+* Xeross - Alternative module, merged into pyhabit
+* 3onyc - Continued development
