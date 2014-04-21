@@ -2,7 +2,6 @@ import json
 
 import requests
 
-
 class HabitAPI(object):
     DIRECTION_UP = "up"
     DIRECTION_DOWN = "down"
@@ -19,15 +18,19 @@ class HabitAPI(object):
 
     def auth_headers(self):
         return {
-            'x-api-user': self.user_id,
-            'x-api-key': self.api_key
+            "x-api-user": self.user_id,
+            "x-api-key": self.api_key,
         }
 
     def request(self, method, path, *args, **kwargs):
-        path = "%s/%s" % ("api/v1", path) if not path.startswith("/") else path[1:]
+        path = "%s/%s" % ("api/v2", path) if not path.startswith("/") else path[1:]
 
         if not "headers" in kwargs:
             kwargs["headers"] = self.auth_headers()
+
+        if "data" in kwargs:
+            kwargs["data"] = json.dumps(kwargs["data"])
+            kwargs["headers"]["Content-Type"] =  "application/json"
 
         return getattr(requests, method)(self.base_url + path, *args, **kwargs)
 
@@ -40,23 +43,25 @@ class HabitAPI(object):
     def task(self, task_id):
         return self.request("get", "user/task/%s" % task_id).json()
 
-    def create_task(self, task_type, text, completed=False, value=0, notes=""):
+    def create_task(self, task_type, text, date=None, tags={}, completed=False, value=0, notes=""):
         data = {
-            'type': task_type,
-            'text': text,
-            'completed': completed,
-            'value': value,
-            'notes': notes
+            "type": task_type,
+            "text": text,
+            "completed": completed,
+            "value": value,
+            "notes": notes,
+            "tags": tags,
         }
 
-        return self.request("post", "user/task/", data=data).json()
+        if date:
+            data["date"] = date
+
+        return self.request("post", "user/tasks/", data=data).json()
 
     def update_task(self, task_id, text):
         return self.request("put", "user/task/%s" % task_id, data=text).json()
 
     def perform_task(self, task_id, direction):
-        url = "/v1/users/%s/tasks/%s/%s" % (self.user_id, task_id, direction)
-        data = json.dumps({'apiToken': self.api_key})
-        headers = {'Content-Type': 'application/json'}
+        url = "user/tasks/%s/%s" % (task_id, direction)
 
-        return self.request("post", url, data=data, headers=headers).json()
+        return self.request("post", url).json()
