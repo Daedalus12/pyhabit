@@ -6,7 +6,7 @@ HabitRPG python library (WIP)
 
 Install using pip
 
-    pip install git+git://github.com/3onyc/pyhabit
+    pip install git+git://github.com/nwiltsie/pyhabit
 
 ## Requires
 
