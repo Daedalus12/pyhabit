@@ -61,6 +61,9 @@ class HabitAPI(object):
     def update_task(self, task_id, text):
         return self.request("put", "user/tasks/%s" % task_id, data=text).json()
 
+    def delete_task(self, task_id):
+        return self.request("delete", "user/tasks/%s" % task_id).json()
+
     def perform_task(self, task_id, direction):
         url = "user/tasks/%s/%s" % (task_id, direction)
 
