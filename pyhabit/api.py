@@ -51,7 +51,11 @@ class HabitAPI(object):
         """Return the specified task."""
         return self.request("get", "user/task/%s" % task_id).json()
 
-    def create_task(self, task_type=TYPE_TODO, **kwargs):
+    def create_todo(self, data):
+        """Convenience function to create a todo."""
+        return self.create_task(self.TYPE_TODO, **data)
+
+    def create_task(self, task_type, **kwargs):
         """
         Create a task, defined by the HabitRPG TaskSchema.
 
