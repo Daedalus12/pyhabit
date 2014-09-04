@@ -1,6 +1,6 @@
 import json
-
 import requests
+
 
 class HabitAPI(object):
     DIRECTION_UP = "up"
@@ -43,20 +43,9 @@ class HabitAPI(object):
     def task(self, task_id):
         return self.request("get", "user/task/%s" % task_id).json()
 
-    def create_task(self, task_type, text, date=None, tags={}, completed=False, value=0, notes=""):
-        data = {
-            "type": task_type,
-            "text": text,
-            "completed": completed,
-            "value": value,
-            "notes": notes,
-            "tags": tags,
-        }
-
-        if date:
-            data["date"] = date
-
-        return self.request("post", "user/tasks/", data=data).json()
+    def create_task(self, task_type=TYPE_TODO, **kwargs):
+        kwargs.update({'type': task_type})
+        return self.request("post", "user/tasks/", data=kwargs).json()
 
     def update_task(self, task_id, text):
         return self.request("put", "user/tasks/%s" % task_id, data=text).json()
