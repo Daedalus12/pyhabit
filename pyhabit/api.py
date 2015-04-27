@@ -43,6 +43,10 @@ class HabitAPI(object):
         """Return the full user object."""
         return self.request("get", "user").json()
 
+    def reset_user(self):
+        """Return the full user object."""
+        return self.request("post", "user/reset").json()
+
     def tasks(self):
         """Return all the available tasks."""
         return self.request("get", "user/tasks").json()
@@ -74,9 +78,31 @@ class HabitAPI(object):
 
     def perform_task(self, task_id, direction):
         """
-        'Perform's the task, which means to score a daily or habit up or down,
+        Performs the task, which means to score a daily or habit up or down,
         or mark a todo as completed.
         """
         url = "user/tasks/%s/%s" % (task_id, direction)
 
         return self.request("post", url).json()
+
+    def sort_tags(self, start=0, stop=0):
+        return self.request("post", "user/tags/sort?from=%d&to=%d".format(start, stop)).json()
+
+    def add_tag(self, data):
+        headers = self.auth_headers()
+        headers['Content-Type'] = "application/json"
+
+        response = self.request("post", "user/tags/", data=data, headers=headers).json()
+        return response
+
+    def edit_tag(self, id, data):
+        headers = self.auth_headers()
+        headers['Content-Type'] = "application/json"
+
+        response = self.request("put", "user/tags/%s" % id, data=data, headers=headers).json()
+        return response
+
+    def delete_tag(self, id):
+        headers = self.auth_headers()
+        response = self.request("delete", "user/tags/%s" % id, headers=headers).json()
+        return response
