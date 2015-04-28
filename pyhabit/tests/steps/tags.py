@@ -1,5 +1,4 @@
 from behave import *
-from pyhabit import hrpg
 from unittest import TestCase
 
 tc = TestCase('__init__')
@@ -37,7 +36,7 @@ def step_impl(context):
 
 @then("The new tag should exist")
 def step_impl(context):
-    assert( context.newTag.id in context.tags ) 
+    tc.assertIn(context.newTag.id, context.tags)
 
 
 @step("I modify the tag")
