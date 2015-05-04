@@ -6,6 +6,9 @@ class User(object):
     def __init__(self, user_id, token):
         self._api = HabitAPI( user_id, token )
 
+        resp = self._api.user()
+        self.tags = Tag.fromDictList(resp['tags'])
+
     def reset(self):
         self._api.reset_user( )
 
@@ -47,3 +50,11 @@ class Tag(object):
 
     def toDict(self):
         return {'id':self.id, 'name':self.name }
+
+    @classmethod
+    def fromDictList( cls, dict_list ):
+        tags = {}
+        for d in dict_list:
+            tag = cls.fromDict( d )
+            tags[tag.id] = tag
+        return tags

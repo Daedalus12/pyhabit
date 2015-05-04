@@ -1,0 +1,263 @@
+{
+  "_id": "0ae9d6b0-c729-4533-bfe1-ac22209eb93e",
+  "__v": 142,
+  "rewards": [],
+  "todos": [],
+  "dailys": [],
+  "habits": [],
+  "inbox": {
+    "optOut": false,
+    "messages": {},
+    "blocks": [],
+    "newMessages": 0
+  },
+  "challenges": [],
+  "tags": [
+    {
+      "name": "evening",
+      "id": "ba3b805d-4eec-42d8-8bd9-77c24c983f0d"
+    },
+    {
+      "name": "afternoon",
+      "id": "0f005e95-3140-4482-b94b-1eaa0e6135d6"
+    },
+    {
+      "name": "morning",
+      "id": "2a19221b-a88d-48e5-8f23-4ce5f29868cf"
+    }
+  ],
+  "stats": {
+    "training": {
+      "con": 0,
+      "str": 0,
+      "per": 0,
+      "int": 0
+    },
+    "buffs": {
+      "str": 0,
+      "int": 0,
+      "per": 0,
+      "con": 0,
+      "stealth": 0,
+      "streaks": false
+    },
+    "per": 0,
+    "int": 0,
+    "con": 0,
+    "str": 0,
+    "points": 0,
+    "class": "warrior",
+    "lvl": 1,
+    "gp": 0,
+    "exp": 0,
+    "mp": 32,
+    "hp": 50,
+    "toNextLevel": 150,
+    "maxHealth": 50,
+    "maxMP": 30
+  },
+  "profile": {
+    "name": "pyhabit"
+  },
+  "preferences": {
+    "language": "en",
+    "timezoneOffset": 420,
+    "costume": false,
+    "emailNotifications": {
+      "weeklyRecaps": true,
+      "importantAnnouncements": true,
+      "invitedQuest": true,
+      "questStarted": true,
+      "invitedGuild": true,
+      "invitedParty": true,
+      "giftedSubscription": true,
+      "giftedGems": true,
+      "wonChallenge": true,
+      "kickedGroup": true,
+      "newPM": true,
+      "unsubscribeFromAll": false
+    },
+    "webhooks": {},
+    "toolbarCollapsed": false,
+    "advancedCollapsed": false,
+    "tagsCollapsed": false,
+    "dailyDueDefaultView": false,
+    "newTaskEdit": false,
+    "disableClasses": false,
+    "stickyHeader": false,
+    "sleep": true,
+    "dateFormat": "MM/dd/yyyy",
+    "allocationMode": "flat",
+    "sound": "off",
+    "shirt": "blue",
+    "skin": "915533",
+    "hideHeader": true,
+    "hair": {
+      "flower": 1,
+      "mustache": 0,
+      "beard": 0,
+      "bangs": 1,
+      "base": 3,
+      "color": "red"
+    },
+    "size": "slim",
+    "dayStart": 0
+  },
+  "party": {
+    "quest": {
+      "progress": {
+        "collect": {},
+        "down": 0,
+        "up": 0
+      }
+    },
+    "orderAscending": "ascending",
+    "order": "level"
+  },
+  "newMessages": {},
+  "lastCron": "2015-05-04T18:20:52.950Z",
+  "items": {
+    "lastDrop": {
+      "count": 0,
+      "date": "2015-04-21T22:38:01.895Z"
+    },
+    "quests": {},
+    "mounts": {},
+    "food": {},
+    "hatchingPotions": {},
+    "eggs": {},
+    "pets": {},
+    "special": {
+      "nyeReceived": [],
+      "valentineReceived": [],
+      "shinySeed": 0,
+      "spookDust": 0,
+      "snowball": 0
+    },
+    "gear": {
+      "costume": {
+        "weapon": "weapon_base_0",
+        "shield": "shield_base_0",
+        "head": "head_base_0",
+        "armor": "armor_base_0"
+      },
+      "equipped": {
+        "weapon": "weapon_base_0",
+        "shield": "shield_base_0",
+        "head": "head_base_0",
+        "armor": "armor_base_0"
+      },
+      "owned": {
+        "weapon_warrior_0": true
+      }
+    }
+  },
+  "invitations": {
+    "guilds": []
+  },
+  "history": {
+    "todos": [
+      {
+        "value": 1,
+        "date": 1429736544793
+      },
+      {
+        "date": 1429805740843,
+        "value": 0
+      },
+      {
+        "value": 0,
+        "date": 1430098780798
+      },
+      {
+        "date": 1430154461202,
+        "value": 0
+      }
+    ],
+    "exp": [
+      {
+        "value": 6,
+        "date": 1429736544793
+      },
+      {
+        "date": 1429805740843,
+        "value": 6
+      },
+      {
+        "value": 0,
+        "date": 1430098780798
+      },
+      {
+        "date": 1430154461202,
+        "value": 0
+      }
+    ]
+  },
+  "flags": {
+    "cronCount": 4,
+    "communityGuidelinesAccepted": false,
+    "weeklyRecapEmailsPhase": 0,
+    "recaptureEmailsPhase": 2,
+    "levelDrops": {},
+    "freeRebirth": false,
+    "rebirthEnabled": false,
+    "classSelected": false,
+    "rewrite": true,
+    "newStuff": true,
+    "itemsEnabled": false,
+    "dropsEnabled": false,
+    "tour": {
+      "market": -1,
+      "challenges": -1,
+      "guilds": -1,
+      "party": -1,
+      "tavern": -1,
+      "stats": -1,
+      "classes": -1,
+      "intro": 4
+    },
+    "showTour": true,
+    "customizationsNotification": true
+  },
+  "purchased": {
+    "plan": {
+      "consecutive": {
+        "trinkets": 0,
+        "gemCapExtra": 0,
+        "offset": 0,
+        "count": 0
+      },
+      "mysteryItems": [],
+      "gemsBought": 0,
+      "extraMonths": 0
+    },
+    "txnCount": 0,
+    "background": {},
+    "shirt": {},
+    "hair": {},
+    "skin": {},
+    "ads": false
+  },
+  "filters": {},
+  "balance": 0,
+  "contributor": {},
+  "backer": {},
+  "auth": {
+    "timestamps": {
+      "loggedin": "2015-05-04T18:20:52.954Z",
+      "created": "2015-04-21T22:38:01.893Z"
+    },
+    "local": {
+      "username": "pyhabit",
+      "email": "pyhabit@gmail.com",
+      "salt": "1894076ce3",
+      "hashed_password": "3a7944fcbdfd7dedb6288f94cd5e3000263bbf7a"
+    }
+  },
+  "achievements": {
+    "perfect": 3,
+    "challenges": []
+  },
+  "_v": 271,
+  "id": "0ae9d6b0-c729-4533-bfe1-ac22209eb93e"
+}
