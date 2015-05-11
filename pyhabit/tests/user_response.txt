@@ -1,10 +1,199 @@
 {
   "_id": "0ae9d6b0-c729-4533-bfe1-ac22209eb93e",
-  "__v": 142,
-  "rewards": [],
-  "todos": [],
-  "dailys": [],
-  "habits": [],
+  "__v": 162,
+  "rewards": [
+    {
+      "text": "Eat a whole pie",
+      "challenge": {},
+      "attribute": "str",
+      "priority": 1,
+      "value": 10,
+      "tags": {},
+      "notes": "",
+      "dateCreated": "2015-05-04T19:38:35.903Z",
+      "id": "4ded4d76-ded7-4ff8-8880-971bb70dea80",
+      "type": "reward"
+    }
+  ],
+  "todos": [
+    {
+      "text": "Finish pyhabit wrapper",
+      "challenge": {},
+      "attribute": "str",
+      "priority": 1,
+      "value": 0,
+      "tags": {},
+      "notes": "",
+      "dateCreated": "2015-05-04T19:37:56.331Z",
+      "id": "f8d08886-9306-469e-baf2-a109398a7bea",
+      "checklist": [
+        {
+          "text": "support for tags",
+          "id": "983cd25d-bd6e-40e1-8775-44f5497b904a",
+          "completed": true
+        },
+        {
+          "text": "support for tasks",
+          "id": "03d75382-4328-4fe1-ba81-50721d13840b",
+          "completed": false
+        }
+      ],
+      "collapseChecklist": false,
+      "completed": false,
+      "type": "todo"
+    },
+    {
+      "text": "Do taxes",
+      "challenge": {},
+      "attribute": "str",
+      "priority": 2,
+      "value": 0,
+      "tags": {
+        "ba3b805d-4eec-42d8-8bd9-77c24c983f0d": true
+      },
+      "notes": "",
+      "dateCreated": "2015-05-04T19:37:17.563Z",
+      "id": "776c835f-96a0-4ccb-b59f-e55a27885ea0",
+      "checklist": [],
+      "collapseChecklist": false,
+      "completed": false,
+      "type": "todo"
+    },
+    {
+      "text": "Paint a picture",
+      "dateCompleted": "2015-05-04T19:37:08.503Z",
+      "challenge": {},
+      "attribute": "str",
+      "priority": 1,
+      "value": 1,
+      "tags": {},
+      "notes": "",
+      "dateCreated": "2015-05-04T19:37:06.124Z",
+      "id": "96af0aac-b69e-4594-bcd2-e4a6b50d8978",
+      "checklist": [],
+      "collapseChecklist": false,
+      "completed": true,
+      "type": "todo"
+    }
+  ],
+  "dailys": [
+    {
+      "text": "Yoga",
+      "challenge": {},
+      "attribute": "str",
+      "priority": 2,
+      "value": 0,
+      "tags": {
+        "2a19221b-a88d-48e5-8f23-4ce5f29868cf": true
+      },
+      "notes": "",
+      "convert_HRPG_datestring_to_datetime": "2015-05-04T19:36:35.278Z",
+      "id": "8353f58b-1ac7-4fd1-b5e9-4ea0e395c9d4",
+      "streak": 0,
+      "checklist": [],
+      "collapseChecklist": false,
+      "repeat": {
+        "su": false,
+        "s": false,
+        "f": true,
+        "th": false,
+        "w": true,
+        "t": false,
+        "m": true
+      },
+      "completed": false,
+      "history": [],
+      "type": "daily"
+    },
+    {
+      "text": "Floss",
+      "challenge": {},
+      "attribute": "str",
+      "priority": 1,
+      "value": 0,
+      "tags": {},
+      "notes": "",
+      "dateCreated": "2015-05-04T19:36:31.839Z",
+      "id": "1e2af0c6-c168-4f67-9061-d0077d5528bf",
+      "streak": 0,
+      "checklist": [],
+      "collapseChecklist": false,
+      "repeat": {
+        "su": true,
+        "s": true,
+        "f": true,
+        "th": true,
+        "w": true,
+        "t": true,
+        "m": true
+      },
+      "completed": false,
+      "history": [],
+      "type": "daily"
+    }
+  ],
+  "habits": [
+    {
+      "text": "Bike instead of driving",
+      "challenge": {},
+      "attribute": "str",
+      "priority": 1,
+      "value": 5.6443010177121415,
+      "tags": {},
+      "notes": "",
+      "dateCreated": "2015-05-04T19:35:53.216Z",
+      "id": "41a338a8-1a07-47eb-abe0-973a9461f0a6",
+      "down": true,
+      "up": true,
+      "history": [
+        {
+          "value": 5.6443010177121415,
+          "date": 1430768157631
+        }
+      ],
+      "type": "habit"
+    },
+    {
+      "text": "Eat junk food",
+      "challenge": {},
+      "attribute": "str",
+      "priority": 1,
+      "value": -1.026657310999762,
+      "tags": {},
+      "notes": "",
+      "dateCreated": "2015-05-04T19:35:36.105Z",
+      "id": "10ec9d91-1e24-4656-8d16-b8c626eb77c3",
+      "down": true,
+      "up": false,
+      "history": [
+        {
+          "value": -1.026657310999762,
+          "date": 1430768163569
+        }
+      ],
+      "type": "habit"
+    },
+    {
+      "text": "Send a letter",
+      "challenge": {},
+      "attribute": "str",
+      "priority": 1,
+      "value": 1,
+      "tags": {},
+      "notes": "",
+      "dateCreated": "2015-05-04T19:35:17.505Z",
+      "id": "1b641eed-0b47-4dc9-b4c4-57a833a8fc74",
+      "down": false,
+      "up": true,
+      "history": [
+        {
+          "value": 1,
+          "date": 1430768164976
+        }
+      ],
+      "type": "habit"
+    }
+  ],
   "inbox": {
     "optOut": false,
     "messages": {},
@@ -34,12 +223,15 @@
       "int": 0
     },
     "buffs": {
-      "str": 0,
-      "int": 0,
-      "per": 0,
-      "con": 0,
+      "shinySeed": false,
+      "spookDust": false,
+      "snowball": false,
+      "streaks": false,
       "stealth": 0,
-      "streaks": false
+      "con": 0,
+      "per": 0,
+      "int": 0,
+      "str": 0
     },
     "per": 0,
     "int": 0,
@@ -48,10 +240,10 @@
     "points": 0,
     "class": "warrior",
     "lvl": 1,
-    "gp": 0,
-    "exp": 0,
-    "mp": 32,
-    "hp": 50,
+    "gp": 8.586895176125331,
+    "exp": 52,
+    "mp": 30,
+    "hp": 47.9,
     "toNextLevel": 150,
     "maxHealth": 50,
     "maxMP": 30
@@ -108,7 +300,7 @@
       "progress": {
         "collect": {},
         "down": 0,
-        "up": 0
+        "up": 4.322150508856071
       }
     },
     "orderAscending": "ascending",
@@ -203,8 +395,8 @@
     "rebirthEnabled": false,
     "classSelected": false,
     "rewrite": true,
-    "newStuff": true,
-    "itemsEnabled": false,
+    "newStuff": false,
+    "itemsEnabled": true,
     "dropsEnabled": false,
     "tour": {
       "market": -1,
@@ -258,6 +450,6 @@
     "perfect": 3,
     "challenges": []
   },
-  "_v": 271,
+  "_v": 302,
   "id": "0ae9d6b0-c729-4533-bfe1-ac22209eb93e"
 }

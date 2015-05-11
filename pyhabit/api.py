@@ -1,5 +1,7 @@
 """Low-level API wrapper for HabitRPG."""
+from datetime import datetime
 import json
+from time import strptime, strftime
 import requests
 
 
@@ -106,3 +108,10 @@ class HabitAPI(object):
         headers = self.auth_headers()
         response = self.request("delete", "user/tags/%s" % id, headers=headers).json()
         return response
+
+
+def convert_HRPG_datestring_to_datetime( s ):
+    return datetime(*strptime(s[:19], "%Y-%m-%dT%H:%M:%S")[:6])
+
+def convert_datetime_to_HRPG_datestring(t):
+    return t.strftime("%Y-%m-%dT%H:%M:%S.000Z")
